@@ -37,6 +37,7 @@ publishing {
             groupId = "serial"
             artifactId = "SerialLib"
             version = "1.0"
+            artifacts {"$buildDir/outputs/aar/serialport-debug.aar"}
         }
     }
 }
