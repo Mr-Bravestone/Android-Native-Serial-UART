@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.library'
+    id 'maven-publish'
 }
 
 android {
@@ -26,6 +27,16 @@ android {
 	externalNativeBuild {
         cmake {
             path "CMakeLists.txt"
+        }
+    }
+}
+
+publishing {
+    publications {
+        bar(MavenPublication){
+            groupId = "serial"
+            artifactId = "SerialLib"
+            version = "1.0"
         }
     }
 }

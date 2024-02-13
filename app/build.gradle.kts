@@ -1,7 +1,6 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("maven-publish")
 }
 
 android {
@@ -35,6 +34,7 @@ android {
         jvmTarget = "1.8"
     }
 }
+
 
 dependencies {
 
