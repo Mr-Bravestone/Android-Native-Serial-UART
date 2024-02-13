@@ -1,4 +1,4 @@
-# Android-Serialport
+# Android-Native-Serialport
 Credit: Google's official serial port library [android-serialport-api](https://code.google.com/archive/p/android-serialport-api/),only supports serial port name and baud rate. This item adds support check digit, data bit, stop bit, flow control configuration item.
 
 
