@@ -33,8 +33,8 @@ android {
  publishing {
         publications {
             release(MavenPublication) {
-                groupId = 'com.github.mint'
-                artifactId = 'mint-android-app'
+                groupId = 'Serial'
+                artifactId = 'Uart'
                 version = '1.0'
                 artifacts {"$buildDir/outputs/aar/serialport-debug.aar"}
             }
