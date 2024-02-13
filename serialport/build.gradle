@@ -30,17 +30,17 @@ android {
         }
     }
 }
-
-publishing {
-    publications {
-        bar(MavenPublication){
-            groupId = "serial"
-            artifactId = "SerialLib"
-            version = "1.0"
-            artifacts {"$buildDir/outputs/aar/serialport-debug.aar"}
+ publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.github.mint'
+                artifactId = 'mint-android-app'
+                version = '1.0'
+                artifacts {"$buildDir/outputs/aar/serialport-debug.aar"}
+            }
         }
-    }
-}
+ }
+
 
 dependencies {
 
