@@ -15,34 +15,43 @@ dependencies {
     implementation("")
 }
 ```
-## 1.List the serial port
+## 1.List the serial port and creating object
 ```
-serialPortFinder.getAllDevicesPath();
+var serialTool = object: SerialTool() {}
+var serialPortFinder =SerialPortFinder.getAllDevicesPath();
+serialTool = object: SerialTool()
+{
+    override fun onDataReceived(paramComBean: ComBean?) {
+        super.onDataReceived(paramComBean)
+        runOnUiThread {
+            run {
+                if (paramComBean != null) {
+                    val result =String(paramComBean.bRec, StandardCharsets.UTF_8)
+                    textView.append(result + "\n")
+                }
+            }
+
+        }
+    }
+}
 ```
 ## 2.Serial port settings
 ```
-serialHelper.setPort(String sPort);      //serial port
-serialHelper.setBaudRate(int iBaud);     //baud rate
+serialTool.setPort(String sPort);      //serial port
+serialTool.setBaudRate(int iBaud);     //baud rate
 ```
 Serial port property settings must be set before the function 'open()' is executed.
 ## 3. Opening serial port
 ```
-serialHelper.open();
+serialTool.open();
 ```
 ## 4.Closing serial port
 ```
-serialHelper.close();
+serialTool.close();
 ```
 ## 5.Sending
 ```
-serialHelper.send(byte[] bOutArray); // sending byte[]
-serialHelper.sendHex(String sHex);  // sending Hex
-serialHelper.sendTxt(String sTxt);  // sending ASCII
-```
-## 6.Receiving
-```
- @Override
-protected void onDataReceived(final ComBean comBean) {
-       Log.d("Received - ",comBean.toString())
-   }
+serialTool.send(byte[] bOutArray); // sending byte[]
+serialTool.sendHex(String sHex);  // sending Hex
+serialTool.sendTxt(String sTxt);  // sending ASCII
 ```
