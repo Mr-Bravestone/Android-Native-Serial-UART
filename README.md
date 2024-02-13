@@ -8,11 +8,21 @@ Credit: Google's official serial port library [android-serialport-api](https://c
 # Usage
 1. To add a dependency to your project, specify a dependency configuration such as implementation in the dependencies block of your module's build.gradle file.
 ```
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+2. To add a dependency to your project, specify a dependency configuration such as implementation in the dependencies block of your module's build.gradle file.
+```
 dependencies {
     //For Java.
-    implementation ''
+    implementation 'com.github.Mr-Bravestone:Android-Native-SerialPort:Tag'
     //For Kotlin.
-    implementation("")
+    implementation("com.github.Mr-Bravestone:Android-Native-SerialPort:Tag")
 }
 ```
 ## 1.List the serial port and creating object
