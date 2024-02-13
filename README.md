@@ -6,7 +6,7 @@ Credit: Google's official serial port library [android-serialport-api](https://c
 <img src ="https://github.com/Mr-Bravestone/Android-Native-SerialPort/blob/master/art/front.png" height = 150 alt ="Android-Native-SerialPort"/>
 
 # Usage
-1. To add a dependency to your project, specify a dependency configuration such as implementation in the dependencies block of your module's build.gradle file.
+1. Add it in your root build.gradle/buil.gradle.kts at the end of repositories:
 ```
 	dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
