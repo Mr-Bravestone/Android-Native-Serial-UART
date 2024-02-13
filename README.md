@@ -2,7 +2,7 @@
 Credit: Google's official serial port library [android-serialport-api](https://code.google.com/archive/p/android-serialport-api/)
 
 
-<img src ="https://[github.com/Mr-Bravestone/Android-Native-SerialPort/tree/master/art/back.jpg" height = 150 alt ="Android-Native-SerialPort"/>
+<img src ="https://github.com/Mr-Bravestone/Android-Native-SerialPort/blob/master/art/back.jpg" height = 150 alt ="Android-Native-SerialPort"/>
 
 # Usage
 1. Open your root  `build.gradle` and add `mavenCentral()`: 
