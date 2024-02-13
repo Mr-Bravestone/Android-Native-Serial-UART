@@ -56,10 +56,3 @@ protected void onDataReceived(final ComBean comBean) {
        Toast.makeText(getBaseContext(), new String(comBean.bRec, "UTF-8"), Toast.LENGTH_SHORT).show();
    }
 ```
-# Screenshots
-
-![Screenshot showing screen](art/screen.png "Screenshot showing screen")
-
-<a href="https://play.google.com/store/apps/details?id=com.ex.serialport"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="70"></a>
-
-PC-side debugging tools  [Serial debugging tool for Win](https://github.com/xmaihh/Android-Serialport/raw/master/serial_port_utility_latest.exe)
