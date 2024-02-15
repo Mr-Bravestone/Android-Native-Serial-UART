@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "android_serial_api"
 include(":app")
-include(":serialport")
+include(":Android-Native-Serial-UART")

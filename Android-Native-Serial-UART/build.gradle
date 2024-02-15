@@ -1,16 +1,3 @@
-buildscript {
-    repositories {
-        jcenter()
-        mavenCentral()
-        google()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.2'
-
-    }
-}
-
-
 plugins {
     id 'com.android.library'
     id 'maven-publish'
@@ -34,27 +21,20 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
-	externalNativeBuild {
+    externalNativeBuild {
         cmake {
             path "CMakeLists.txt"
         }
     }
-}
- publishing {
-        publications {
-            release(MavenPublication) {
-                groupId = 'Serial'
-                artifactId = 'Uart'
-                version = '1.0'
-                artifacts {"$buildDir/outputs/aar/serialport-debug.aar"}
-            }
+    publishing {
+        singleVariant("release") {
         }
- }
 
-
+    }
+}
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -63,4 +43,16 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 	//implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId='mr.bravestone'
+                artifactId='androiduart'
+                version='1.0.1'
+            }
+        }
+    }
 }
