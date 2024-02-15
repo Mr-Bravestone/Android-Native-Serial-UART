@@ -21,9 +21,9 @@ Credit: Google's official serial port library [android-serialport-api](https://c
 ```
 dependencies {
     //For Java.
-    implementation 'com.github.Mr-Bravestone:Android-Native-SerialPort:Tag'
+    implementation 'com.github.Mr-Bravestone:Android-Native-Serial-UART:V1.0'
     //For Kotlin.
-    implementation("com.github.Mr-Bravestone:Android-Native-SerialPort:Tag")
+    implementation("com.github.Mr-Bravestone:Android-Native-Serial-UART:V1.0")
 }
 ```
 ## 1.List the serial port and creating object
@@ -38,7 +38,7 @@ serialTool = object: SerialTool()
             run {
                 if (paramComBean != null) {
                     val result =String(paramComBean.bRec, StandardCharsets.UTF_8)
-                    textView.append(result + "\n")
+                    Log.d("Received - ",result)
                 }
             }
 
