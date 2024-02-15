@@ -101,7 +101,7 @@
         android:id="@+id/credit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Credit: github/mr.bravestone"
+        android:text="Credit: github/Mr-Bravestone"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

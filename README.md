@@ -6,6 +6,8 @@ Credit: Google's official serial port library [android-serialport-api](https://c
 <img src ="https://github.com/Mr-Bravestone/Android-Native-Serial-UART/blob/master/art/back.png" height = 150 alt ="Android-Native-SerialPort"/>
 <img src ="https://github.com/Mr-Bravestone/Android-Native-Serial-UART/blob/master/art/front.png" height = 150 alt ="Android-Native-SerialPort"/>
 
+# Device Must Be Rooted
+
 # Usage
 1. Add it in your root build.gradle/buil.gradle.kts at the end of repositories:
 ```

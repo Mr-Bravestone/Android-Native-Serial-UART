@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">android_serial_api</string>
+    <string name="app_name">Android-Native-Serial-UART</string>
     <string-array name="BaudRate">
         <item>9600</item>
         <item>19200</item>
