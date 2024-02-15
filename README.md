@@ -1,7 +1,8 @@
+[![](https://jitpack.io/v/Mr-Bravestone/Android-Native-Serial-UART.svg)](https://jitpack.io/#Mr-Bravestone/Android-Native-Serial-UART)
 # Android-Native-Serialport
 Credit: Google's official serial port library [android-serialport-api](https://code.google.com/archive/p/android-serialport-api/)
 
-[![](https://jitpack.io/v/Mr-Bravestone/Android-Native-Serial-UART.svg)](https://jitpack.io/#Mr-Bravestone/Android-Native-Serial-UART)
+
 <img src ="https://github.com/Mr-Bravestone/Android-Native-Serial-UART/blob/master/art/back.png" height = 150 alt ="Android-Native-SerialPort"/>
 <img src ="https://github.com/Mr-Bravestone/Android-Native-Serial-UART/blob/master/art/front.png" height = 150 alt ="Android-Native-SerialPort"/>
 
