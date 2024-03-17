@@ -81,13 +81,28 @@ class MainActivity : AppCompatActivity() {
 
     fun ClosePort(view: View)
     {
-        serialTool.close()
+        try {
+            serialTool.close()
+            Toast.makeText(this,"Port Closed Successfully",Toast.LENGTH_SHORT).show()
+        }catch (e: Exception)
+        {
+            Toast.makeText(this,"Port Not Opened yet!",Toast.LENGTH_SHORT).show()
+        }
+
     }
 
     fun SendData(view: View)
     {
         val value = editText.text.toString()
-        serialTool.sendTxt(value + "\n")
+        try {
+            serialTool.sendTxt(value + "\n")
+            editText.text=""
+        }catch (e: Exception)
+        {
+            Toast.makeText(this,"Port Not Opened yet!",Toast.LENGTH_SHORT).show()
+        }
+
+
     }
 
     fun ClearText(view: View)
