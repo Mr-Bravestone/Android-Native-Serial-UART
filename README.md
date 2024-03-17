@@ -9,7 +9,7 @@ Credit: Google's official serial port library [android-serialport-api](https://c
 # Device Must Be Rooted
 
 # Usage
-1. Add it in your root build.gradle/buil.gradle.kts at the end of repositories:
+1. Add it in your root build.gradle/build.gradle.kts at the end of repositories:
 ```
 	dependencyResolutionManagement {
 		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
